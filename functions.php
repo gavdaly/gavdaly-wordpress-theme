@@ -121,7 +121,7 @@ add_action( 'widgets_init', 'gavdaly_widgets_init' );
 function gavdaly_scripts() {
 	wp_enqueue_style( 'gavdaly-style', get_stylesheet_uri() );
 
-  /* do not require jquery TODO: did not work */
+  /* do not require jquery */
   if ( !is_user_logged_in() ):
      wp_deregister_script('jquery');
  endif;
