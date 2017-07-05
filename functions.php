@@ -16,6 +16,8 @@ if ( ! function_exists( 'gavdaly_setup' ) ) :
  * as indicating support for post thumbnails.
  */
 function gavdaly_setup() {
+	/* do not require jquery if user is not admin */
+	if ( !is_admin() ) wp_deregister_script('jquery');
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
@@ -119,9 +121,9 @@ add_action( 'widgets_init', 'gavdaly_widgets_init' );
 function gavdaly_scripts() {
 	wp_enqueue_style( 'gavdaly-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'gavdaly-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	// wp_enqueue_script( 'gavdaly-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'gavdaly-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	// wp_enqueue_script( 'gavdaly-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
