@@ -7,6 +7,9 @@
  * @package gavdaly
  */
 
+ /* do not require jquery if user is not admin */
+ if ( !is_admin() ) wp_deregister_script('jquery');
+
 if ( ! function_exists( 'gavdaly_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -16,8 +19,6 @@ if ( ! function_exists( 'gavdaly_setup' ) ) :
  * as indicating support for post thumbnails.
  */
 function gavdaly_setup() {
-	/* do not require jquery if user is not admin */
-	if ( !is_admin() ) wp_deregister_script('jquery');
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
