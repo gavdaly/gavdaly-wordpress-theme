@@ -1,6 +1,6 @@
-import serviceWorker from './serviceWorker'
+import registerServiceWorker from './registerServiceWorker'
 // import '../sass/style.sass'
 
 console.log('webpack working')
 
-serviceWorker();
+registerServiceWorker();

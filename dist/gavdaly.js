@@ -70,9 +70,9 @@
 "use strict";
 
 
-var _serviceWorker = __webpack_require__(1);
+var _registerServiceWorker = __webpack_require__(1);
 
-var _serviceWorker2 = _interopRequireDefault(_serviceWorker);
+var _registerServiceWorker2 = _interopRequireDefault(_registerServiceWorker);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -80,7 +80,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 console.log('webpack working');
 
-(0, _serviceWorker2.default)();
+(0, _registerServiceWorker2.default)();
 
 /***/ }),
 /* 1 */
