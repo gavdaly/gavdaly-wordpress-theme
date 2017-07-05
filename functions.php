@@ -7,8 +7,8 @@
  * @package gavdaly
  */
 
- /* do not require jquery if user is not admin */
- if ( !is_admin() ) wp_deregister_script('jquery');
+ /* do not require jquery */
+wp_deregister_script('jquery');
 
 if ( ! function_exists( 'gavdaly_setup' ) ) :
 /**
