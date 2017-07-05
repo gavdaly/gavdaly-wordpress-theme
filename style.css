@@ -434,7 +434,6 @@ a {
   float: left;
   width: 100%; }
   .main-navigation ul {
-    display: none;
     list-style: none;
     margin: 0;
     padding-left: 0; }
@@ -463,7 +462,6 @@ a {
     text-decoration: none; }
 
 /* Small menu. */
-.menu-toggle,
 .main-navigation.toggled ul {
   display: block; }
 
