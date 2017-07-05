@@ -8,7 +8,12 @@
  */
 
  /* do not require jquery */
-wp_deregister_script('jquery');
+ if ( is_user_logged_in() ):
+    echo 'Welcome, registered user!';
+else:
+    wp_deregister_script('jquery');
+endif;
+
 
 if ( ! function_exists( 'gavdaly_setup' ) ) :
 /**
