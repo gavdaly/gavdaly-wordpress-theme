@@ -130,15 +130,17 @@ function gavdaly_scripts() {
 
 	// wp_enqueue_script( 'gavdaly-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
+	wp_enqueue_script( 'gavdaly-gavdaly', get_template_directory_uri() . '/dist/gavdaly.js', array(), '1', true );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'gavdaly_scripts' );
 
-register_post_type( 'journal' );
-
-register_post_type( 'book' );
+// register_post_type( 'journal' );
+//
+// register_post_type( 'book' );
 
 /**
  * Implement the Custom Header feature.
