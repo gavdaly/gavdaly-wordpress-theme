@@ -123,7 +123,7 @@ function register() {
     }
 
     window.addEventListener('load', function () {
-      var swUrl = process.env.PUBLIC_URL + '/service-worker.js';
+      var swUrl = '/wp-content/themes/gavdaly/dist/service-worker.js';
 
       if (!isLocalhost) {
         // Is not local host. Just register service worker

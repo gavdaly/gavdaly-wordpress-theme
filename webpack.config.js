@@ -1,4 +1,5 @@
 const path = require('path');
+var SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -21,5 +22,16 @@ module.exports = {
       ]
     }
   ]
-  }
+},
+plugins: [
+    new SWPrecacheWebpackPlugin(
+      {
+        cacheId: 'gavdaly',
+        dontCacheBustUrlsMatching: /\.\w{8}\./,
+        minify: true,
+        navigateFallback: "https://gavdaly.com/",
+        staticFileGlobsIgnorePatterns: [/\.map$/, /asset-manifest\.json$/],
+      }
+    ),
+  ]
 }
