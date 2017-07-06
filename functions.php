@@ -136,6 +136,10 @@ function gavdaly_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'gavdaly_scripts' );
 
+register_post_type( 'journal' );
+
+register_post_type( 'book' );
+
 /**
  * Implement the Custom Header feature.
  */
