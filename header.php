@@ -16,7 +16,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
+<script src="/wp-content/tnemes/gavdaly/dist/gavdaly.js" charset="utf-8"></script>
+
 <link rel="manifest" href="/wp-content/themes/gavdaly/manifest.json">
+<meta name="theme-color" content="#fff"/>
 
 <?php wp_head(); ?>
 </head>
