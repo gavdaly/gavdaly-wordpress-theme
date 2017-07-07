@@ -138,23 +138,23 @@ function gavdaly_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'gavdaly_scripts' );
 
-$journal_args = array(
-	'show_in_nav_menus' => true,
-	'show_in_menu' => true,
-	'menu_icon' => 'dashicons-calendar-alt',
-	'has_archive' => 'journal',
-	'capability_type' => 'journal',
-	'supports' => array(
-		'title',
-		'editor',
-		'excerpt',
-		'author',
-		'trackbacks'
-		'custom-fields',
-		'page-attributes',
-		'post-formats'
-	)
-);
+// $journal_args = array(
+// 	'show_in_nav_menus' => true,
+// 	'show_in_menu' => true,
+// 	'menu_icon' => 'dashicons-calendar-alt',
+// 	'has_archive' => 'journal',
+// 	'capability_type' => 'journal',
+// 	'supports' => array(
+// 		'title',
+// 		'editor',
+// 		'excerpt',
+// 		'author',
+// 		'trackbacks'
+// 		'custom-fields',
+// 		'page-attributes',
+// 		'post-formats'
+// 	)
+// );
 
 register_post_type( 'journal', $journal_args );
 
