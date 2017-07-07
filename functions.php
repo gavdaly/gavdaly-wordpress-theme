@@ -145,16 +145,16 @@ $journal_args = array(
 	// 'show_ui' => true
 	// 'show_in_menu' => true,
 // 	'menu_icon' => 'dashicons-calendar-alt',
-	'has_archive' => 'journal',
-	'capability_type' => 'journal',
-	'supports' => array(
-		'title',
-		'excerpt',
-		'trackbacks'
-		'custom-fields',
-		'page-attributes',
-		'post-formats'
-	)
+	// 'has_archive' => 'journal',
+	// 'capability_type' => 'journal',
+	// 'supports' => array(
+	// 	'title',
+	// 	'excerpt',
+	// 	'trackbacks'
+	// 	'custom-fields',
+	// 	'page-attributes',
+	// 	'post-formats'
+	// )
 );
 
 register_post_type( 'journal', $journal_args );
