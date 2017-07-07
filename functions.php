@@ -140,7 +140,7 @@ add_action( 'wp_enqueue_scripts', 'gavdaly_scripts' );
 
 $journal_args = array(
 	'label' => 'journal',
-	'public' => 'true',
+	// 'public' => 'true',
 // 	'show_in_nav_menus' => true,
 	// 'show_ui' => true
 	// 'show_in_menu' => true,
