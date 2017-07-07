@@ -154,7 +154,7 @@ $journal_args = array(
 		'page-attributes',
 		'post-formats'
 	)
-)
+);
 
 register_post_type( 'journal', $journal_args );
 
