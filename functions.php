@@ -144,8 +144,8 @@ $journal_args = array(
 // 	'menu_icon' => 'dashicons-calendar-alt',
 	'has_archive' => 'journal',
 	'capability_type' => 'journal',
-// 	'supports' => array(
-// 		'title',
+	'supports' => array(
+		'title',
 // 		'editor',
 // 		'excerpt',
 // 		'author',
@@ -153,7 +153,7 @@ $journal_args = array(
 // 		'custom-fields',
 // 		'page-attributes',
 // 		'post-formats'
-// 	)
+	)
 );
 
 register_post_type( 'journal', $journal_args );
