@@ -140,7 +140,7 @@ add_action( 'wp_enqueue_scripts', 'gavdaly_scripts' );
 
 $journal_args = array(
 // 	'show_in_nav_menus' => true,
-// 	'show_in_menu' => true,
+	'show_in_menu' => true,
 // 	'menu_icon' => 'dashicons-calendar-alt',
 	'has_archive' => 'journal',
 	'capability_type' => 'journal',
