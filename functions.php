@@ -146,13 +146,11 @@ $journal_args = array(
 	'capability_type' => 'journal',
 	'supports' => array(
 		'title',
-// 		'editor',
-// 		'excerpt',
-// 		'author',
-// 		'trackbacks'
-// 		'custom-fields',
-// 		'page-attributes',
-// 		'post-formats'
+		'excerpt',
+		'trackbacks'
+		'custom-fields',
+		'page-attributes',
+		'post-formats'
 	)
 );
 
