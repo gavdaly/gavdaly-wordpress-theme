@@ -156,7 +156,7 @@ $journal_args = array(
 	)
 )
 
-register_post_type( 'journal' $journal_args );
+register_post_type( 'journal', $journal_args );
 
 // register_post_type( 'book' );
 
