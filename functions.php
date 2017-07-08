@@ -49,6 +49,10 @@ function gavdaly_setup() {
 		'menu-1' => esc_html__( 'Primary', 'gavdaly' ),
 	) );
 
+	register_nav_menus( array(
+		'menu-2' => esc_html__( 'Footer', 'gavdaly' ),
+	) );
+
 	/*
 	 * Switch default core markup for search form, comment form, and comments
 	 * to output valid HTML5.
