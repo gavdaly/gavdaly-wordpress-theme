@@ -549,11 +549,11 @@ a {
   display: block; }
 
 .site-header {
-  height: 50vh;
   display: flex;
   flex-direction: column; }
 
 .site-branding {
+  height: 50vh;
   padding: 2vmin;
   flex: 1;
   display: flex;
