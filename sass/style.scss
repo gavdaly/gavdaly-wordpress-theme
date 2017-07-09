@@ -47,9 +47,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 
 html {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 *, *:before, *:after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 

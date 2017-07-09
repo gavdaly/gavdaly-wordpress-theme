@@ -45,10 +45,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 --------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:700|Raleway");
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
 
 *, *:before, *:after {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
 
 /*--------------------------------------------------------------
 # Normalize
@@ -515,6 +519,9 @@ a {
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
+.site-content {
+  padding: 2vmin; }
+
 .sticky {
   display: block; }
 
@@ -547,8 +554,12 @@ a {
   flex-direction: column; }
 
 .site-branding {
+  padding: 2vmin;
   flex: 1;
-  display: flex; }
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: green; }
   .site-branding .custom-logo-link {
     max-width: 20vmin; }
 
@@ -556,6 +567,7 @@ a {
   display: flex; }
 
 .site-footer {
+  padding: 2vmin;
   background-color: #404040;
   color: #f1f1f1;
   display: flex;
@@ -565,6 +577,8 @@ a {
       flex-direction: row; } }
   .site-footer > * {
     flex: 1; }
+  .site-footer a, .site-footer a:hover, .site-footer a:visited {
+    color: white; }
 
 .site-header .main-navigation ul {
   display: flex; }
