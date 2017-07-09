@@ -1,7 +1,5 @@
 .main-navigation {
-	clear: both;
 	display: block;
-	float: left;
 	width: 100%;
 
 	ul {
@@ -11,7 +9,6 @@
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			float: left;
 			position: absolute;
 			top: 100%;
 			left: -999em;
@@ -49,7 +46,6 @@
 	}
 
 	li {
-		float: left;
 		position: relative;
 
 		&:hover > a,
@@ -84,12 +80,10 @@
 	}
 
 	.nav-previous {
-		float: left;
 		width: 50%;
 	}
 
 	.nav-next {
-		float: right;
 		text-align: right;
 		width: 50%;
 	}
