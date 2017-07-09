@@ -32,8 +32,7 @@ function gavdaly_jetpack_setup() {
 			'date'       => '.posted-on',
 			'categories' => '.cat-links',
 			'tags'       => '.tags-links',
-			'author'     => '.byline',
-			'comment'    => '.comments-link',
+			'author'     => '.byline'
 		),
 	) );
 }

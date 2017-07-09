@@ -54,13 +54,11 @@ function gavdaly_setup() {
 	) );
 
 	/*
-	 * Switch default core markup for search form, comment form, and comments
+	 * Switch default core markup for search form
 	 * to output valid HTML5.
 	 */
 	add_theme_support( 'html5', array(
 		'search-form',
-		'comment-form',
-		'comment-list',
 		'gallery',
 		'caption',
 	) );
@@ -136,9 +134,6 @@ function gavdaly_scripts() {
 
 	wp_enqueue_script( 'gavdaly-gavdaly', get_template_directory_uri() . '/dist/gavdaly.js', array(), '1', true );
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
 }
 add_action( 'wp_enqueue_scripts', 'gavdaly_scripts' );
 
