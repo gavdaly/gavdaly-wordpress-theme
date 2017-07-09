@@ -561,7 +561,6 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background: #48494e;
   color: white; }
   .site-branding > img {
     object-fit: cover;
