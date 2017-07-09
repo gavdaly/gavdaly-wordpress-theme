@@ -27,8 +27,8 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'gavdaly' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<img src="<?php header_image() ?>" />
 		<div class="site-branding">
+			<img src="<?php header_image() ?>" />
 			<?php
 			the_custom_logo();
 
