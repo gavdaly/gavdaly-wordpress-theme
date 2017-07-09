@@ -566,6 +566,20 @@ a {
 .bypostauthor {
   display: block; }
 
+.site-header {
+  height: 50vh;
+  display: flex;
+  flex-direction: column; }
+
+.site-branding {
+  flex: 1;
+  display: flex; }
+  .site-branding .custom-logo-link {
+    max-width: 20vmin; }
+
+.site-navigation ul {
+  display: flex; }
+
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
