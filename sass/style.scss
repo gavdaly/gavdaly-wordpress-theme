@@ -40,7 +40,19 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 # Media
 	## Captions
 	## Galleries
+
+
+
 --------------------------------------------------------------*/
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
 
@@ -73,11 +85,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 # Accessibility
 --------------------------------------------------------------*/
 @import "modules/accessibility";
-
-/*--------------------------------------------------------------
-# Alignments
---------------------------------------------------------------*/
-@import "modules/alignments";
 
 /*--------------------------------------------------------------
 # Widgets

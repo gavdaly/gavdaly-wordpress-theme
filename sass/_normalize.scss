@@ -6,6 +6,7 @@ html {
 
 body {
 	margin: 0;
+	padding: 0;
 }
 
 article,
@@ -65,7 +66,6 @@ dfn {
 
 h1 {
 	font-size: 2em;
-	margin: 0.67em 0;
 }
 
 mark {
@@ -129,7 +129,6 @@ select,
 textarea {
 	color: inherit;
 	font: inherit;
-	margin: 0;
 }
 
 button {
@@ -182,7 +181,6 @@ input[type="search"]::-webkit-search-decoration {
 
 fieldset {
 	border: 1px solid #c0c0c0;
-	margin: 0 2px;
 	padding: 0.35em 0.625em 0.75em;
 }
 
