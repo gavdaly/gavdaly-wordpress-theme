@@ -5,8 +5,11 @@ $normal: #b5b5b5;
 .main-navigation {
   ul {
     display: flex;
+    li {
+      flex: 1;
+    }
   }
-  #site-navigation a {
+  a {
   	position: relative;
   	display: block;
   	margin: 0 1.5em;
@@ -17,16 +20,16 @@ $normal: #b5b5b5;
   	transition: color 0.3s;
   }
 
-  #site-navigation a:hover,
-  #site-navigation a:focus {
+  a:hover,
+  a:focus {
   	color: $hover;
   }
 
-  #site-navigation .current_page_item a {
+  .current_page_item a {
   	color: $accent;
   }
 
-  #site-navigation a::before {
+  a::before {
   	content: '';
   	position: absolute;
   	bottom: 0;
@@ -40,7 +43,7 @@ $normal: #b5b5b5;
   	transition: transform 0.1s;
   }
 
-  #site-navigation .current_page_item a::before {
+  .current_page_item a::before {
   	-webkit-transform: scale3d(1, 1, 1);
   	transform: scale3d(1, 1, 1);
   	-webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
