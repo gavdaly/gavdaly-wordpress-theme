@@ -3,16 +3,29 @@
   flex-direction: column;
 }
 
+
 .site-branding {
+  position: relative;
+  overflow: hidden;
   height: 50vh;
   padding: 2vmin;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background: green;
+  background: rgb(72, 73, 78);
+  color: white;
+  & > img {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
   .custom-logo-link {
-    max-width: 20vmin;
+    max-width: 40vmin;
   }
 }
 
