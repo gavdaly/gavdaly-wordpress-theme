@@ -137,6 +137,13 @@ function gavdaly_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'gavdaly_scripts' );
 
+// add svg downloads
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
+
 $journal_args = array(
 	// 'label' => 'journal',
 	// 'public' => 'true',
