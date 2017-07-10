@@ -10,17 +10,15 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<h1>Books</h1>
+
 		<main id="main" class="site-main">
 
 		<?php
 		if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="archive-description">', '</div>' );
-				?>
+				<h1>Books</h1>
+				<p>Here is a list of books that I've read in the last little while. There will be a review of each once I write them.</p>
 			</header><!-- .page-header -->
 
 			<?php
